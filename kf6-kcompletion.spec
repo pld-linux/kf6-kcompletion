@@ -4,7 +4,7 @@
 # TODO:
 # - runtime Requires if any
 %define		kdeframever	6.19
-%define		qtver		5.15.2
+%define		qtver		6.7.0
 %define		kfname		kcompletion
 
 Summary:	String completion framework
@@ -17,10 +17,11 @@ Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{v
 # Source0-md5:	99a9751ac64739b3492b321d2456dbe9
 URL:		https://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
-BuildRequires:	Qt6Test-devel >= %{qtver}
+%{?with_tests:BuildRequires:	Qt6Test-devel >= %{qtver}}
 BuildRequires:	Qt6Widgets-devel >= %{qtver}
 BuildRequires:	cmake >= 3.16
 BuildRequires:	kf6-extra-cmake-modules >= %{version}
+BuildRequires:	kf6-kcodecs-devel >= %{version}
 BuildRequires:	kf6-kconfig-devel >= %{version}
 BuildRequires:	kf6-kwidgetsaddons-devel >= %{version}
 BuildRequires:	ninja
