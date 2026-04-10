@@ -3,18 +3,18 @@
 %bcond_with	tests		# build with tests
 # TODO:
 # - runtime Requires if any
-%define		kdeframever	6.24
+%define		kdeframever	6.25
 %define		qtver		6.7.0
 %define		kfname		kcompletion
 
 Summary:	String completion framework
 Name:		kf6-%{kfname}
-Version:	6.24.0
-Release:	2
+Version:	6.25.0
+Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	1e72bc411e3add610a56eca56c17f057
+# Source0-md5:	b3bf7d140fda805d1ccdd9ac13b88d99
 URL:		https://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 %{?with_tests:BuildRequires:	Qt6Test-devel >= %{qtver}}
