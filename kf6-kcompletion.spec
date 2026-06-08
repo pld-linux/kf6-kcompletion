@@ -43,6 +43,12 @@ completion" on QString objects. A common use is completing filenames
 or URLs. It can also be used for completing email-addresses,
 telephone-numbers, commands, SQL queries, etc.
 
+%description -l pl.UTF-8
+Ta klasa oferuje "auto-uzupełnianie", "ręczne-uzupełnianie" lub
+"uzupełnianie powłoki" na objektach QString. Główny sposób użycia to
+dopełnianie nazw plików lub URLi. Może być też używane do dopełniania
+adresów email, numerów telefonów, poleceń, zapytań SQLowych, itp.
+
 %package devel
 Summary:	Header files for %{kfname} development
 Summary(pl.UTF-8):	Pliki nagłówkowe dla programistów używających %{kfname}
